@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Canvas-Drawing App</title>
+</head>
+<body>
+    <div class="main">
+       <div class="content">
+           <div class="toolbar">
+              <div class="first">
+                 <h2>Shapes</h2> 
+                 <label id="rect"><i class="fas fa-square"></i>Rectangle</label>
+                 <label id="circle"><i class="fa-regular fa-circle"></i>Circle</label>
+                 <label id="tri"><i class="fa-solid fa-caret-up"></i>Triangle</label>
+              </div>
+            
+              <div class="sec">
+                <h2>Options</h2>
+                <label id="Brush"><i class="fa-solid fa-brush"></i>Brush</label>
+                <label id="Eraser"><i class="fa-solid fa-eraser"></i>Eraser</label>
+                <label id="fillColor"><i class="fa-solid fa-fill-drip"></i>Fill-color</label>
+                <input id= "colorPicker"type="range" id="Fill-color" class="Fill-color-bar">
+              </div>
+              
+              <div class="third">
+                  <h2>Colour</h2>
+                   <div class="circle red"  data-color="red"></div>
+                   <div class="circle black" data-color="black"></div>
+                   <div class="circle blue" data-color="blue"></div>
+                   <div class="circle green" data-color="green"></div>
+                   <div class="circle yellow" data-color="yellow"></div>
+                   <div class="circle orange" data-color="orange"></div>
+              </div>
+              <div class="bt">
+               <button id="clear-canva">Clear canvas</button>
+              </div>
+           </div>
+           <!-- <div class="candraw"></div> -->
+            <canvas class="candraw"></canvas>
+       </div>
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>
